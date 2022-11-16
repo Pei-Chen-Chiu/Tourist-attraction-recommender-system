@@ -27,7 +27,6 @@
 ### 主程式說明
 使用 flask架設與 LINE Message API 的網站， chatbot 回覆與資料庫連線，都是在這處理。
 ```!
-D:.
 │  app.py  
 │  config.py
 │  Procfile
