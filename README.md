@@ -39,9 +39,9 @@ D:.
 2. `config.py` 放入與 LINE BOT 連線的 `Chennel access token` 與 `Channel secret`
 3. `Procfile`  告訴 Paas 如何啟動 web (`app.py`)
 4. `sql_conn.py` 與 MySQL 連線，取回傳給使用者的景點資訊
-    1. 景點名稱
-    2. 文字雲圖片連結
-    3. gmap 連結
+    1.景點名稱
+    2.文字雲圖片連結
+    3.gmap 連結
 5. `template_message.py` chatbot 的回覆模板
 
 ### 流程
