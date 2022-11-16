@@ -55,17 +55,21 @@ D:.
 3. 將主程式上傳 GitHub，與 Paas 連動並部署啟用 web(`app.py`)產生 webhook URL，讓 LINE BOT 一收到使用者訊息，透過 webhook URL 連線至主程式。
 
 #### 使用者介面
-**三種選擇方式**
-1. 直接選擇縣市推薦 --選擇新北市
+>**三種選擇方式**
+### 1. 直接選擇縣市推薦 --選擇新北市
 
 ![](https://i.imgur.com/R0jbCHt.gif)
 
-2. 選擇區域推薦 --選擇深坑、新店、石碇、烏來、坪林區
+### 2. 選擇區域推薦 --選擇板橋、永和、中和區
 
-![](https://i.imgur.com/L1N0VK7.gif)
+![](https://i.imgur.com/Z98RTgo.gif)
 
-3. 選擇區推薦 --選擇士林區
+
+### 3. 選擇區推薦 --選擇士林區
 
 ![](https://i.imgur.com/YQwTRZM.gif)
+
+
+
 
 
