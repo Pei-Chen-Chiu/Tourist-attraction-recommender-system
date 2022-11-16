@@ -62,7 +62,7 @@ D:.
 
 2. 選擇區域推薦 --選擇深坑、新店、石碇、烏來、坪林區
 
-![](https://i.imgur.com/HuTDv06.gif)
+![](https://i.imgur.com/L1N0VK7.gif)
 
 3. 選擇區推薦 --選擇士林區
 
