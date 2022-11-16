@@ -13,7 +13,7 @@
 
 ### 使用到的程式語言、工具
 - Python 3.7.9 、Flask(開發框架)
-- Linebot API
+- LINE Message API
 - Paas: 雲端主機，部署機器人用 (使用 adaptable.io )
 - MySQL：雲端資料庫 (使用 Heroku )
 
