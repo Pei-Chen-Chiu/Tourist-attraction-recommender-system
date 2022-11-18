@@ -13,7 +13,7 @@
 - MySQL：雲端資料庫 ( Heroku --ClearDB MySQL )
 
 ## 二、 流程
-## 1. 資料前處理
+## 1. 取得資料
 >使用雙北景點資料庫，爬取每個景點分類為最新，前 1700 筆評論不為空的 Google map 評論，在爬蟲時同時處理文字與表情符號，寫入 MySQL。    
 >[爬取 Google map 評論程式碼連結](https://colab.research.google.com/drive/15nG7SovZizJstNjHAIyxPERWrnSPVH6w?usp=share_link)
 
