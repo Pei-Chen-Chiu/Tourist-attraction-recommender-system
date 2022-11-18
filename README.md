@@ -36,36 +36,43 @@
 ```
 1. `app.py` 用 flask 架設與 LINE Message API 連線的網站，與設定 chatbot 功能
 2. `config.py` 放入與 LINE BOT 連線的 `Chennel access token` 與 `Channel secret`
-3. `Procfile`  告訴 Paas 如何啟動 web (`app.py`)
+3. `Procfile`  在 Adaptable 雲端部署平台起動網站(`app.py`)的指令
 4. `sql_conn.py` 與 MySQL 連線，取回傳給使用者的景點資訊
+
     1.景點名稱
+    
     2.文字雲圖片連結
+    
     3.gmap 連結
 5. `template_message.py` chatbot 的回覆模板
 
 ### 流程
-使用者輸入訊息，觸發 callback 函數，透過webhook 連線雲端伺服器處理，將訊息回傳給使用者。
+使用者輸入訊息，觸發 callback 函數，透過webhook URL 連線雲端伺服器，將訊息回傳給使用者。
 
-<img src="https://i.imgur.com/pOChUNF.png" width = "400" height = "160" alt="webhook 說明" align=center />
+<img src="https://i.imgur.com/NWX7RMx.png" width = "487" height = "200" alt="webhook 說明" align=center />
 
 
 1. 創立 LINE 官方帳號
 2. 在 `app.py` 內，定義一個 callback 的函數，當使用者發送訊息時，此函數會被呼叫使用，要觸發函數，需使用 webhook URL (HTTPS 的網域)
-3. 將主程式上傳 GitHub，與 Paas 連動並部署啟用 web(`app.py`)產生 webhook URL，讓 LINE BOT 一收到使用者訊息，透過 webhook URL 連線至主程式。
+3. 將主程式上傳 GitHub，與 Paas 連動並部署啟用 web(`app.py`)產生 webhook URL，讓 LINE BOT 一收到使用者訊息，就能透過 webhook URL 連線至主程式。
 
 ### 使用者介面
 **三種選擇方式**
-* 直接選擇縣市推薦 -- ex: 選擇新北市
-* 選擇區域推薦 -- ex: 選擇板橋、永和、中和區
-* 選擇區推薦 -- ex: 選擇士林區
+
+* 直接選擇縣市推薦 – ex: 選擇臺北市
+* 選擇區域推薦 – ex: 選擇士林、大同區
+* 選擇區推薦 – ex: 選擇士林區
+
 <br/>
 
 ### 使用者操作流程 --以士林區為例
-選擇臺北市>>選擇士林、大同區>>選擇士林區
+選擇臺北市>> 士林、大同區 >> 士林區
 
-從推薦的 3 個景點內選擇景點 --林語堂故居
+從推薦的 3 個景點內選擇 --林語堂故居
 
-**取得林語堂故居景點連結與 Google map 評論的文字雲**
+**取得林語堂故居**
+1. 景點連結
+2. Google map 評論的文字雲
 
 ![](https://i.imgur.com/YQwTRZM.gif)
 
